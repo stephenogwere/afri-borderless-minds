@@ -18,7 +18,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -91,12 +93,49 @@ main {
 }
 
 /*Hero image section*/
-#hero {
+#hero-image {
     height: 700px;
     width: 100%;
-    background: url('../assets/images/elephants-nature.jpg') no-repeat center center/cover;
+    background: url('../assets/images/hero-image-pexels.jpg') no-repeat center center/cover;
     position: relative;
 }
 
+#slogan-heading {
+    /*Final rgba value for the opacity*/
+    background-color: rgb(139, 0, 0, .9);
+    font-size: 130;
+    position: absolute;
+    top: 55px;
+    width: 90%;
+    min-height: 80px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
 
+#slogan-heading > h2 {
+    color: #ffffff;
+}
+
+/*About section on home page*/
+#about {
+    background-color: rgba(83, 104, 114, .9);
+    border-color: #252525;
+    position: absolute;
+    top: 180px;
+    bottom: 40px;
+    width: 70%;
+    min-height: 200px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+#about > h3 {
+    color: #9ACD32;
+}
+
+#about > p {
+    color: #ffffff;
+    font-size: 20px;
+}
 
