@@ -51,7 +51,7 @@ header a {
     list-style-type: none;
 }
 
-#menu>li {
+#menu > li {
     margin-bottom: 1em;
 }
 
@@ -106,7 +106,7 @@ main {
     background-color: rgb(139, 0, 0, .9);
     font-size: 130;
     position: absolute;
-    top: 55px;
+    top: 30px;
     width: 90%;
     min-height: 80px;
     padding-top: 5px;
@@ -131,16 +131,16 @@ main {
     padding-right: 5px;
 }
 
-#about-cover>h3 {
+#about-cover > h3 {
     color: #9ACD32;
 }
 
-#about-cover>p {
+#about-cover > p {
     color: #ffffff;
     font-size: 20px;
 }
 
-#inst>h3 {
+#inst > h3 {
     color: #9ACD32;
 }
 

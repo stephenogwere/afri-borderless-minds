@@ -15,59 +15,80 @@
     <title>Afri Borderless Minds</title>
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <a href="index.html">
-            <h1 id="logo">Afri Borderless Minds</h1>
-        </a>
-        <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-sign"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Main Content-->
-    <main>
-        <section id="hero-image">
-            <div id="slogan-heading">
-                <h2>Test Your Knowledge About Africa</h2>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <div>
+                <a href="index.html">
+                    <h1 id="logo">Afri Borderless Minds</h1>
+                    <button class="scores-header" id="view-high-scores">
+                        View Scores
+                    </button>
+                </a>
+                <input type="checkbox" id="nav-toggle" name="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-sign"><i class="fa-solid fa-bars"></i></label>
+                <nav>
+                    <ul id="menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div id="about-cover">
-                <h3>About</h3>
+            <div class="timer">
                 <p>
-                    XXXXXYHJJHKKKJPGHGKGKJGGGJJJGJGJhffhjdhsf
+                    Time:
+                    <span id="timer">
+                        0
+                    </span>
                 </p>
-                <div id="inst">
-                    <h3>Quiz Instructions</h3>
-                    <p>bgfjhffgkdfdggdjfdghdg</p>
-                    <button class="quiz-start-button">Start Quiz</button>
-                </div>
             </div>
-            <div id="quiz-field"></div>
-            <div id="correct-answer-field"></div>
-            <div id="incorrect-answer-field"></div>
-            <div id="brief-facts-fields"></div>
-            <div id="points-field"></div>
-        </section>
-    </main>
-    <!--Footer-->
-    <footer>
-        <ul id="social-media-links">
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="visit our facebook page, opens in a new tab"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="visit our twitter page, opens in a new tab"><i class="fa-brands fa-square-twitter"></i></a>
-            </li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="visit our youtube page, opens in a new tab"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="visit our instagram page, opens in a new tab"><i
-                        class="fa-brands fa-square-instagram"></i></a></li>
-        </ul>
-    </footer>
-
+        </header>
+        <!--Main Content-->
+        <main class="quiz">
+            <div id="hero-image">
+                <div id="slogan-heading">
+                    <h2>Test Your Knowledge About Africa</h2>
+                </div>
+                <div id="about-cover">
+                    <h3>About</h3>
+                    <p>
+                        XXXXXYHJJHKKKJPGHGKGKJGGGJJJGJGJhffhjdhsf
+                    </p>
+                    <div id="inst">
+                        <h3>Quiz Instructions</h3>
+                        <p>Take the quiz to find out how much you know about Africa. Answer the following questions
+                            to test your knowledge about different aspects of Africa ranging from its people, wild life,
+                            food, music to politics. Each correct answer chosen, leads you to the next question and finally
+                            you'll
+                            get to see the total points scored at the end of the quiz. Note that you'll need to answer the
+                            questions
+                            within the limited time since this affects your time and score. Have fun.
+                        </p>
+                        <button class="quiz-start-button">Start Quiz</button>
+                    </div>
+                </div>
+                <div id="quiz-field"></div>
+                <div id="correct-answer-field"></div>
+                <div id="incorrect-answer-field"></div>
+                <div id="brief-facts-fields"></div>
+                <div id="points-field"></div>
+            </div>
+        </main>
+        <!--Footer-->
+        <footer>
+            <ul id="social-media-links">
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="visit our facebook page, opens in a new tab"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                        aria-label="visit our twitter page, opens in a new tab"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="visit our youtube page, opens in a new tab"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="visit our instagram page, opens in a new tab"><i
+                            class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+        </footer>
+    </div>
     <!--Font awesome kit-->
     <script src="https://kit.fontawesome.com/a44d67c963.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
