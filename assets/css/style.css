@@ -191,7 +191,7 @@ main {
         display: flex;
     }
 
-    #menu>li {
+    #menu > li {
         padding-left: 1rem;
     }
 
@@ -203,3 +203,29 @@ main {
         margin: 0 0.5rem;
         line-height: 2.5rem;
     }
+
+    /*Main content*/
+    main {
+        /*expand main content down to accomodate the larger header*/
+        margin-top: 58px;
+    }
+
+    /*Hero Image section*/
+    #slogan-heading {
+        width: 300px;
+        right: 50px;
+    }
+
+    .quiz-start-button:hoover {
+        background-color: #fafafa;
+        color: #8b0000;
+    }
+}
+
+/*Media query: laptops and desktops  (992px and larger)*/
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
+    
