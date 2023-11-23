@@ -96,7 +96,8 @@ main {
 #hero-image {
     height: 700px;
     width: 100%;
-    background: url('../images/hero-image.jpg'); no-repeat center center/cover;
+    background: url('../images/hero-image.jpg');
+    no-repeat center center/cover;
     position: relative;
 }
 
@@ -112,7 +113,7 @@ main {
     padding-left: 10px;
 }
 
-#slogan-heading > h2 {
+#slogan-heading>h2 {
     color: #ffffff;
 }
 
@@ -130,25 +131,25 @@ main {
     padding-right: 5px;
 }
 
-#about-cover > h3 {
+#about-cover>h3 {
     color: #9ACD32;
 }
 
-#about-cover > p {
+#about-cover>p {
     color: #ffffff;
     font-size: 20px;
 }
 
-#inst > h3 {
+#inst>h3 {
     color: #9ACD32;
 }
 
-#inst > p {
+#inst>p {
     color: #ffffff;
     font-size: 20px;
 }
 
-.quiz-start-button{
+.quiz-start-button {
     background-color: #8b0000;
     color: #ffffff;
     margin-top: 20px;
@@ -159,3 +160,46 @@ main {
     width: 200px;
 }
 
+/* Footer */
+#social-media-links {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-media-links i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+
+    /*Header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-sign {
+        display: none;
+    }
+
+    #logo {
+        margin: 0 0.5rem;
+        line-height: 2.5rem;
+    }
