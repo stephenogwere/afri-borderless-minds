@@ -106,14 +106,14 @@ main {
     background-color: rgb(139, 0, 0, .9);
     font-size: 130;
     position: absolute;
-    top: 30px;
+    top: 55px;
     width: 90%;
     min-height: 80px;
     padding-top: 5px;
     padding-left: 10px;
 }
 
-#slogan-heading>h2 {
+#slogan-heading > h2 {
     color: #ffffff;
 }
 
@@ -140,16 +140,12 @@ main {
     font-size: 20px;
 }
 
-#inst > h3 {
-    color: #9ACD32;
-}
-
-#inst>p {
+#inst > p {
     color: #ffffff;
     font-size: 20px;
 }
 
-.quiz-start-button {
+#start {
     background-color: #8b0000;
     color: #ffffff;
     margin-top: 20px;
@@ -216,7 +212,7 @@ main {
         right: 50px;
     }
 
-    .quiz-start-button:hoover {
+    #start:hoover {
         background-color: #fafafa;
         color: #8b0000;
     }
