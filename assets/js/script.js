@@ -24,37 +24,58 @@ let questions = [
     },
 
     {
-        prompt: `How does a for loop 
-				start?`,
-        options: [
-            "for (i = 0; i <= 5; i++)",
-            "for (i = 0; i <= 5)",
-            "for i = 1 to 5",
-            " for (i <= 5; i++)",
+        prompt: `Nelson Madiba Mandela was the first president of which African country?`,
+        choices: [
+            "Tanzania",
+            "Guinea-Bissau",
+            "Mozambique",
+            "South Africa",
         ],
-        answer: "for (i = 0; i <= 5; i++)",
+        answer: "South Africa",
     },
 
     {
-        prompt: `In JavaScript, which 
-				of the following is 
-				a logical operator?`,
-        options: ["|", "&&", "%", "/"],
-        answer: "&&",
+        prompt: ` Which country in Africa do you find the Rwenzori mountains?`,
+        choices: [
+            "Mauritius",
+            "Ethiopia",
+            "Uganda",
+            "Kenya",
+        ],
+        answer: "Uganda",
     },
 
     {
-        prompt: `A named element in a 
-				JavaScript program that 
-				is used to store and 
-				retrieve data is a _____.`,
-        options: [
-            "method",
-            "assignment operator",
-            "letiable",
-            "string",
+        prompt: `Which country in Africa is the largest by population?`,
+        choices: [
+            "South Africa",
+            "Egypt",
+            "Nigeria",
+            "Senegal",
         ],
-        answer: "letiable",
+        answer: "Nigeria",
+    },
+
+    {
+        prompt: ` Who is the current president of Kenya?`,
+        choices: [
+            "Uhuru Kenyatta",
+            "William Ruto",
+            "Raila Odinga",
+            "Julius Malema",
+        ],
+        answer: "William Ruto",
+    },
+
+    {
+        prompt: `Which country in Africa is the largest by land?`,
+        choices: [
+            "DR Congo",
+            "South Africa",
+            "Sudan",
+            "Algeria",
+        ],
+        answer: "Algeria",
     },
 ];
 
@@ -66,8 +87,8 @@ let questionsEl =
     );
 let timerEl =
     document.querySelector("#timer");
-let choicesEl =
-    document.querySelector("#options");
+let optionsEl =
+    document.querySelector("#choices");
 let submitBtn = document.querySelector(
     "#submit-score"
 );
@@ -119,23 +140,23 @@ function getQuestion() {
         );
     promptEl.textContent =
         currentQuestion.prompt;
-    choicesEl.innerHTML = "";
-    currentQuestion.options.forEach(
-        function (choice, i) {
-            let choiceBtn =
+    optionsEl.innerHTML = "";
+    currentQuestion.choices.forEach(
+        function (option, i) {
+            let optionBtn =
                 document.createElement(
                     "button"
                 );
-            choiceBtn.setAttribute(
+            optionBtn.setAttribute(
                 "value",
-                choice
+                option
             );
-            choiceBtn.textContent =
-                i + 1 + ". " + choice;
-            choiceBtn.onclick =
+            optionBtn.textContent =
+                i + 1 + ". " + option;
+            optionBtn.onclick =
                 questionClick;
-            choicesEl.appendChild(
-                choiceBtn
+            optionsEl.appendChild(
+                optionBtn
             );
         }
     );
@@ -162,7 +183,7 @@ function questionClick() {
         feedbackEl.textContent =
             "Correct!";
         feedbackEl.style.color =
-            "green";
+            "yellow";
     }
     feedbackEl.setAttribute(
         "class",
