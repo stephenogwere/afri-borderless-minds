@@ -178,6 +178,19 @@ main {
     color: #D2DE32;
 }
 
+#quiz-end > h2 {
+    padding-top: 100px;
+    color: #D2DE32;
+}
+
+#quiz-end > p {
+    color: #D2DE32;
+}
+
+#submit-score{
+    color: #ffffff;
+    background-color: #8b0000;
+}
 /* Footer */
 #social-media-links {
     text-align: center;
