@@ -189,7 +189,9 @@ main {
 
 #submit-score{
     color: #ffffff;
-    background-color: #8b0000;
+    background-color: #FFB000;
+    font-size: 13px;
+    border-color: #0C356A;
 }
 /* Footer */
 #social-media-links {
