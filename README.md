@@ -10,8 +10,8 @@ The site owner's central objective is to create a challenging quiz that is timed
 The website has been structured into the following features that fully create a challenging yet beautiful quiz experience:
 
 * Navigation
-** The top-left of the landing page of the website features the name of the website: Afri Boderless Minds. On the right of the landing page is the slogan of the website: Test Your Knowledge about Africa while to the top-right of the slogan is the quiz timer. 
-** The view button at the top-left below the page heading calls the user to access the scores upon completion of the quiz.
+* * The top-left of the landing page of the website features the name of the website: Afri Boderless Minds. On the right of the landing page is the slogan of the website: Test Your Knowledge about Africa while to the top-right of the slogan is the quiz timer. 
+* * The view button at the top-left below the page heading calls the user to access the scores upon completion of the quiz.
 * * At the heart of the landing page is an about section clearly elaborating information on what the quiz is about and some details on how to start and take the quiz.
 * * The start quiz button captivatively calls the intereted user to take on the quiz challenge.
 * * Links at the footer represent the connection to our social media platforms.
