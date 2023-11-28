@@ -1,6 +1,9 @@
 # Afri Borderless Minds
 ## Test Your Knowledge About Africa
 Afri Borderless Minds is a quiz that tests knowledge regarding the African continent ranging from her countries, borders, people, food, clothing, music all the way to the political climate of this great continent. The purpose of this quiz is to assess the available knowledge among people within the African continent as well her visitors and try to fill the existing knowledge gap about this beautiful continent.
+<img width="950" alt="Desktop screenshort" src="https://github.com/stephenogwere/afri-borderless-minds/assets/142418008/1d521e21-2e40-42e5-a849-02dd311dc4ed">
+![mobile screenshot](https://github.com/stephenogwere/afri-borderless-minds/assets/142418008/8b54d05a-4c7f-4742-a57c-342172e99c9e)
+
 
 ## Target Users and User Goals
 Prospective users of the website will be individuals interested to in checking their knowledge of the African continent including potential visitors to the African continent interested in getting a few details of their destination prior to their visit to the continent. The website also targets individuals of African decent as well as inhabitants of the African continent interested in knowing in putting their knowledge of the continent to test and generally anyone interested in entertaining themselves with this quiz challenge while learning a few details of beautiful Africa.
