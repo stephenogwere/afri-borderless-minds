@@ -1,4 +1,4 @@
-// script.js 
+// Create script.js 
 
 let questions = [
     {
@@ -79,7 +79,7 @@ let questions = [
     },
 ];
 
-// Get Dom Elements 
+// Obtain Dom Elements 
 
 let questionsEl =
     document.querySelector(
@@ -102,7 +102,7 @@ let feedbackEl = document.querySelector(
 let reStartBtn =
     document.querySelector("#restart");
 
-// Quiz's initial state 
+// Start Quiz 
 let currentQuestionIndex = 0;
 let time = questions.length * 15;
 let timerId;
@@ -112,7 +112,7 @@ let timerId;
 function quizStart() {
     timerId = setInterval(
         clockTick,
-        1000
+        1500
     );
     timerEl.textContent = time;
     let landingScreenEl =
@@ -162,8 +162,8 @@ function getQuestion() {
     );
 }
 
-// Check for right answers and deduct 
-// Time for wrong answer, go to next question 
+// Verify right answers and subtract 
+// Time (10 seconds) for wrong answer, then go to next question 
 
 function questionClick() {
     if (
@@ -183,7 +183,7 @@ function questionClick() {
         feedbackEl.textContent =
             "Correct!";
         feedbackEl.style.color =
-            "yellow";
+            "blue";
     }
     feedbackEl.setAttribute(
         "class",
@@ -206,7 +206,7 @@ function questionClick() {
     }
 }
 
-// End quiz by hiding questions, 
+// Conclude quiz by hiding questions, 
 // Stop timer and show final score 
 
 function quizEnd() {
@@ -239,8 +239,7 @@ function clockTick() {
     }
 }
 
-// Save score in local storage 
-// Along with users' name 
+// Save score and user's name in local storage 
 
 function saveHighscore() {
     let name = nameEl.value.trim();
@@ -266,7 +265,7 @@ function saveHighscore() {
     }
 }
 
-// Save users' score after pressing enter 
+// Press enter to save users' score
 
 function checkForEnter(event) {
     if (event.key === "Enter") {
@@ -285,3 +284,54 @@ submitBtn.onclick = saveHighscore;
 // Start quiz after clicking start quiz 
 
 startBtn.onclick = quizStart;
+
+// Create highScore.js 
+
+let scoresBtn = document.querySelector(
+    "#view-high-scores"
+);
+
+// Rank previous scores in order by 
+// Retrieving scores from localStorage 
+
+function printHighscores() {
+    let highscores =
+        JSON.parse(
+            window.localStorage.getItem(
+                "highscores"
+            )
+        ) || [];
+    highscores.sort(function (a, b) {
+        return b.score - a.score;
+    });
+    highscores.forEach(function (
+        score
+    ) {
+        let liTag =
+            document.createElement(
+                "li"
+            );
+        liTag.textContent =
+            score.name +
+            " - " +
+            score.score;
+        let olEl =
+            document.getElementById(
+                "highscores"
+            );
+        olEl.appendChild(liTag);
+    });
+}
+
+// Clear previous scores when users click clear 
+function clearHighscores() {
+    window.localStorage.removeItem(
+        "highscores"
+    );
+    window.location.reload();
+}
+document.getElementById(
+    "clear"
+).onclick = clearHighscores;
+
+printHighscores();
