@@ -58,6 +58,7 @@ The website has been structured into the following features that fully create a 
   * The favicon was taken from icons8 platform.
 
 ## Wireframes
+![PP2 Wireframes](https://github.com/stephenogwere/afri-borderless-minds/assets/142418008/dca3c0f7-8eef-44ff-811f-b4d8f4bcfd89)
 
 
 
